@@ -73,4 +73,8 @@ interface IERC20 {
      * a call to {approve}. `value` is the new allowance.
      */
     event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    function mint(address recipient, uint256 value) external returns (bool);
+    
+    event Minted(address indexed to, uint256 value);
 }
