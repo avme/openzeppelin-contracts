@@ -11,6 +11,11 @@ interface IERC20 {
     function totalSupply() external view returns (uint256);
 
     /**
+     * @dev Returns the max amount of tokens that can exists.
+     */
+    function maxSupply() external view returns (uint256);
+
+    /**
      * @dev Returns the amount of tokens owned by `account`.
      */
     function balanceOf(address account) external view returns (uint256);
